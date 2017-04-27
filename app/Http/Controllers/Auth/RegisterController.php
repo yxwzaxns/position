@@ -1,9 +1,9 @@
 <?php
 
-namespace Pos\Http\Controllers\Auth;
+namespace poc\Http\Controllers\Auth;
 
-use Pos\User;
-use Pos\Http\Controllers\Controller;
+use poc\User;
+use poc\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

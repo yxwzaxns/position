@@ -19,7 +19,7 @@
             "database"
         ],
         "psr-4": {
-            "Pos\\": "app/"
+            "poc\\": "app/"
         }
     },
     "autoload-dev": {

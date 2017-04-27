@@ -1,6 +1,6 @@
 <?php
 
-namespace Pos\Http\Controllers;
+namespace poc\Http\Controllers;
 
 use Illuminate\Http\Request;
 

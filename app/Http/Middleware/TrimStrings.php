@@ -1,6 +1,6 @@
 <?php
 
-namespace Pos\Http\Middleware;
+namespace poc\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as BaseTrimmer;
 

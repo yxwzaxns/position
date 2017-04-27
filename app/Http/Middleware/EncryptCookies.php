@@ -1,6 +1,6 @@
 <?php
 
-namespace Pos\Http\Middleware;
+namespace poc\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

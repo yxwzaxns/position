@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Pos\User::class,
+        'model' => poc\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

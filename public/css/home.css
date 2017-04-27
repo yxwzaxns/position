@@ -1,0 +1,28 @@
+.clear{
+    clear: both;
+}
+.demo{
+    position: relative;
+    left: 56px;
+}
+.bin{
+    width: 170px;
+    height: 160px;
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+.horzi{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.demo1{
+    position: relative;
+    left: 146px;
+    top: 20px;
+}
+.demo2{
+    position: relative;
+    left: 146px;
+    bottom: 20px;
+}

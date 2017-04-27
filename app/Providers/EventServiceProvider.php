@@ -1,6 +1,6 @@
 <?php
 
-namespace Pos\Providers;
+namespace poc\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Pos\Events\Event' => [
-            'Pos\Listeners\EventListener',
+        'poc\Events\Event' => [
+            'poc\Listeners\EventListener',
         ],
     ];
 
