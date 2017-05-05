@@ -61,7 +61,7 @@ $(function () {
         for(var i=0;i<path.length;){
             var img = new Image();
             img.className = 'path_xy';
-            img.src = 'http://localhost:8000/images/path.gif';
+            img.src = '/images/path.gif';
             img.style.left = parseFloat(path[i][1]) * map_info.rate[1] * (parseFloat(dp[0].style.width) / parseFloat(1298)) - 2.5;
             img.style.top = parseFloat(dp[0].style.height) - parseFloat(path[i][0]) * map_info.rate[0] * (parseFloat(dp[0].style.height) / parseFloat(729)) - 2.5;
             // if(dp[0].style.transform != 'none'){
