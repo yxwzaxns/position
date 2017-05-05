@@ -26,3 +26,28 @@
     left: 146px;
     bottom: 20px;
 }
+#po{
+    display: inline-block;
+    /*float: left;*/
+    position: relative;
+    height: 20px;
+    left: 200px;
+    bottom: 120px;
+    /*width: 10px;*/
+}
+.cropper-view-box{
+    position: relative;
+}
+.cropper-view-box img{
+    position: absolute;
+}
+#path{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+#path_div .path_xy{
+    width: 5px;
+    height: 5px;
+}

@@ -11,6 +11,46 @@
         <div class="col-md-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Options</div>
+                <div class="panel-body">
+                    <table class="table" id="table">
+                        <tr>
+                            <th>k</th>
+                            <th>v</th>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>y</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>rotate</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>scaleX</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>scaleY</td>
+                            <td class="v">2</td>
+                        </tr>
+                        <tr>
+                            <td>rate</td>
+                            <td class="v">2</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="col-md-7">
@@ -18,7 +58,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    <img id="image" src="{{ asset('images/map.png') }}">
+                    <img id="image" src="{{ asset('images/room.png') }}">
                 </div>
             </div>
         </div>
