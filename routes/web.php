@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +13,15 @@
 
 Route::get('/', function () {
     return view('welcome');
+    // return redirect('/home');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/user', function (Request $request) {
+    return Response::json(array(
+      'user' => $request->user()
+    ));
 });
