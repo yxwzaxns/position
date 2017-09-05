@@ -40,7 +40,7 @@ Route::get('/v1/location/{name}/{id}', function ($name = null, $id = null){
     switch ($id) {
       case '1':
         $location = array(
-          rand(0,1298),rand(0,729)
+          rand(0,1298 - 45 * 2),rand(40,729 - 40 * 2)
         );
         break;
       case '2':
@@ -72,6 +72,7 @@ Route::get('/v1/map_info/{map_name?}', function($map_name = null) {
                 'floor' => 1,
                 'name' => 'room',
                 'map_size' => [1298,729],
+                'origin_point' => [45,40],
                 'physicsSize' => '12x59m',
                 'map_url' => '/images/room.png',
                 'map_areas' => [

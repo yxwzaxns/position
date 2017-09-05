@@ -75,7 +75,11 @@ export default {
 
       // init map data
       var mapInfo = this.mapData;
-      var extent = [0, 0, mapInfo.map_size[0], mapInfo.map_size[1]];
+      var extent = [-mapInfo.origin_point[0],
+                    -mapInfo.origin_point[1],
+                    mapInfo.map_size[0] - mapInfo.origin_point[0],
+                    mapInfo.map_size[1] - mapInfo.origin_point[1]];
+      console.log(extent);
 
       var projection = new Projection({
           code: 'pixel',
@@ -139,8 +143,16 @@ export default {
       var scaleLineControl = new ScaleLineControl({
           //设置度量单位为米
           // minWidth: 1,
-          projection: projection,
-
+          // projection: projection,
+          render: function(mapEvent) {
+            var frameState = mapEvent.frameState;
+            if (!frameState) {
+              this.viewState_ = null;
+            } else {
+              this.viewState_ = frameState.viewState;
+            }
+            this.updateElement_();
+          }
           // target: 'scalebar',
           // className: 'ol-scale-line'
       });
