@@ -1,8 +1,8 @@
 <?php
 
-namespace pos\Http\Controllers\Auth;
+namespace Poc\Http\Controllers\Auth;
 
-use pos\Http\Controllers\Controller;
+use Poc\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller

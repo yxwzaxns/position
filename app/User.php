@@ -1,6 +1,6 @@
 <?php
 
-namespace pos;
+namespace Poc;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

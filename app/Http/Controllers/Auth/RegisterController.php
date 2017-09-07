@@ -1,9 +1,9 @@
 <?php
 
-namespace pos\Http\Controllers\Auth;
+namespace Poc\Http\Controllers\Auth;
 
-use pos\User;
-use pos\Http\Controllers\Controller;
+use Poc\User;
+use Poc\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \pos\User
+     * @return \Poc\User
      */
     protected function create(array $data)
     {

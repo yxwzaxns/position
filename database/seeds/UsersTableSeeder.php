@@ -1,8 +1,8 @@
 <?php
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\Database\Seeder;
 
-class UserSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('users')->delete();
       DB::table('users')->insert([
           'name' => 'aong',
           'email' => 'yxwzaxns@gmail.com',

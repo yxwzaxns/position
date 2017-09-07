@@ -1,6 +1,6 @@
 <?php
 
-namespace pos\Http\Controllers;
+namespace Poc\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -24,5 +24,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    public function getRealLocation($value='')
+    {
+      $x = 1;
+      $y = 1;
+      $coordinates = [$x, $y];
+      return $coordinates;
     }
 }

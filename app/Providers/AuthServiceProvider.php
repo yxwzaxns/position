@@ -1,6 +1,6 @@
 <?php
 
-namespace pos\Providers;
+namespace Poc\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'pos\Model' => 'pos\Policies\ModelPolicy',
+        'Poc\Model' => 'Poc\Policies\ModelPolicy',
     ];
 
     /**

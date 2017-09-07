@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -30,7 +31,16 @@ Route::get('/user', function (Request $request) {
 //             ));
 //       } );
 // 	});
-
+// Route::get('/v1/location/{name}/{id}','HomeController@getRealLocation');
+// Route::get('/v1/location/{name}/{id}', function ($name = null, $id = null){
+// // var_dump('a');exit;
+//     // $location = HomeController::getRealLocation();
+//     return Response::json(array(
+//             'error' => false,
+//             'status_code' => 200,
+//             'data' => $location,
+//         ));
+// });
 Route::get('/v1/location/{name}/{id}', function ($name = null, $id = null){
   if ($id == null || $name == null ) {
     return Response::json(array(
@@ -73,7 +83,7 @@ Route::get('/v1/map_info/{map_name?}', function($map_name = null) {
                 'name' => 'room',
                 'map_size' => [1298,729],
                 'origin_point' => [45,40],
-                'physicsSize' => '12x59m',
+                'physicsSize' => '12x5.9m',
                 'map_url' => '/images/room.png',
                 'map_areas' => [
                   ['door',[30,720]],
@@ -84,6 +94,8 @@ Route::get('/v1/map_info/{map_name?}', function($map_name = null) {
                 'floor' => 2,
                 'name' => 'lib',
                 'map_size' => [793,667],
+                'origin_point' => [10,10],
+                'physicsSize' => '30x30m',
                 'map_url' => '/images/lib.png',
                 'map_areas' => [
                   ['A1', [100,100]],

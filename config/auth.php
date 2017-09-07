@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => pos\User::class,
+            'model' => Poc\User::class,
         ],
 
         // 'users' => [

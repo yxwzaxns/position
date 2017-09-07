@@ -1,6 +1,6 @@
 <?php
 
-namespace pos\Exceptions;
+namespace Poc\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

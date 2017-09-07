@@ -1,6 +1,6 @@
 <?php
 
-namespace pos\Http\Middleware;
+namespace Poc\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
