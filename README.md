@@ -24,6 +24,7 @@
 * clone 本代码库到本地工作目录
         git clone https://github.com/yxwzaxns/position.git
 * 进入代码目录
+
         # 安装php项目依赖包
         composer install
         # 安装node开发环境依赖
