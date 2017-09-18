@@ -22,6 +22,7 @@
   2. 安装 Nodejs 6.9.0
   3. 安装
 * clone 本代码库到本地工作目录
+
         git clone https://github.com/yxwzaxns/position.git
 * 进入代码目录
 
@@ -35,7 +36,9 @@
         touch database/database.sqlite
         # 进行数据库迁移
 * 开启前端代码打包
+
         npm run watch
 * 开启laravel dev服务
+
         # web 默认开启在 localhost 8000端口
         php artisan serve
